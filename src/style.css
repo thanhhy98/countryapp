@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    font-family: Calibri, Arial;
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: 5fr 200px;
+    height: 91vh;
+}
+
+.main {
+    margin-left: 50px;
+}
+
+.fav {
+    background-color: rgb(226, 226, 226);
+    border-left: 1px solid rgb(207, 207, 207)
+}
+.fav-list {
+    list-style-type: none;
+    background-color: rgb(248, 247, 247);
+    overflow: auto;
+    height: 84.9vh;
+}
+
+.fav-list li img {
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.fav-list li {
+    width: 110px;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.fav-list span {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    text-shadow: -1px 1px 0 #000,
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100px
+}
+
+.fav-list p {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100px
+}
+
+#delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.fav-list li:hover #delete {
+    opacity: 1;
+}
+.show-one {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 1.7rem;
+}
+#flag  {
+    border-radius: 5px;
+    transform: scale(0.8);
+    margin: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#weather {
+    margin-top: 20px;
+    transform: scale(1.5)
+}
+
+.show-one {
+    font-size: 20px;
+}
+.country-list {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.country-row {
+    font-size: 1.1em;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding : 20px;
+    border-radius: 5px;
+    width: 95%;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 2px 7px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.country-list button {
+    width: 100px;
+}
+
+#temp {
+    cursor: pointer;
+    font-size: 3em;
+    margin-top: 10px;
+    font-weight: lighter;
+}
