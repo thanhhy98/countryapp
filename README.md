@@ -1,9 +1,10 @@
-API provider:
+## API Provider:
 
-https://www.weatherapi.com
-
+https://www.weatherapi.com \
 https://www.restcountries.com
 
+## Deployment:
+Add .env file and define the environment variable name REACT_APP_API_KEY with your weatherapi api key as value
 Execute the following commands in the terminal to install necessary dependencies:
 ```
 npm install
